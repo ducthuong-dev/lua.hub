@@ -1,0 +1,5 @@
+local Tab = Window:NewTab("Ink Game")
+local Section = Tab:NewSection("Tính năng")
+Section:NewButton("Teleport", "Dịch chuyển nhanh", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(50, 100, 50)
+end)
